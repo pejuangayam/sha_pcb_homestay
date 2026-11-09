@@ -610,6 +610,139 @@ section[id] {
 }
 
 /* -------------------------------------------------------------------
+   Tambahan Kemudahan Sekitar
+   ------------------------------------------------------------------- */
+.nearby-extra-section {
+    margin-top: 50px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 36px 32px;
+    border: 1px solid rgba(79, 172, 254, 0.25);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
+}
+
+.nearby-extra-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.nearby-extra-header .badge-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0, 150, 199, 0.1);
+    color: #0077b6;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 16px;
+    border-radius: 30px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(0, 150, 199, 0.2);
+}
+
+.nearby-extra-header h3 {
+    font-size: 1.55rem;
+    color: #1a365d;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.nearby-extra-header p {
+    color: #64748b;
+    font-size: 0.96rem;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.nearby-extra-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.nearby-extra-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 20px 22px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.nearby-extra-card:hover {
+    transform: translateY(-3px);
+    background: #ffffff;
+    border-color: #38bdf8;
+    box-shadow: 0 8px 24px rgba(56, 189, 248, 0.15);
+}
+
+.nearby-extra-card.full-width {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #f0f9ff, #f8fafc);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+.extra-card-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: #e0f2fe;
+    color: #0284c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.extra-card-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.extra-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.extra-card-top h4 {
+    font-size: 1.08rem;
+    color: #1e293b;
+    font-weight: 600;
+    margin: 0;
+}
+
+.extra-distance-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.extra-card-content p {
+    color: #64748b;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* -------------------------------------------------------------------
    Galeri Gambar
    ------------------------------------------------------------------- */
 .gallery-grid {
@@ -1061,6 +1194,34 @@ footer .footer-brand {
     }
     .nearby-img-box {
         height: 220px;
+    }
+
+    .nearby-extra-section {
+        padding: 24px 18px;
+        margin-top: 35px;
+        border-radius: 18px;
+    }
+    .nearby-extra-header h3 {
+        font-size: 1.3rem;
+    }
+    .nearby-extra-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .nearby-extra-card.full-width {
+        grid-column: 1;
+    }
+    .nearby-extra-card {
+        padding: 16px;
+        gap: 14px;
+    }
+    .extra-card-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.15rem;
+    }
+    .extra-card-top h4 {
+        font-size: 1.02rem;
     }
     
     .gallery-grid {
